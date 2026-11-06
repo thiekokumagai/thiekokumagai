@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 235 40% 5%;
+    --foreground: 210 40% 96%;
+    --text-secondary: 215 25% 75%;
+    --text-tertiary: 218 17% 58%;
+    --card: 235 35% 9%;
+    --card-foreground: 210 40% 96%;
+    --popover: 235 35% 9%;
+    --popover-foreground: 210 40% 96%;
+    --primary: 187 100% 50%;
+    --primary-foreground: 235 40% 5%;
+    --secondary: 235 25% 14%;
+    --secondary-foreground: 210 40% 96%;
+    --muted: 235 25% 14%;
+    --muted-foreground: 218 17% 58%;
+    --accent: 265 90% 66%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 235 25% 18%;
+    --border-subtle: 235 25% 14%;
+    --input: 235 25% 18%;
+    --ring: 187 100% 50%;
+    --surface-muted: 235 30% 12%;
+    --radius: 0.75rem;
+    --brand-gradient: linear-gradient(135deg, hsl(187 100% 55%), hsl(265 90% 68%) 60%, hsl(320 90% 62%));
+    --glow: 0 0 30px rgba(0, 229, 255, 0.15);
+    --shadow-sticky-up: none;
+    --sidebar-background: 235 35% 9%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 187 100% 50%;
+    --sidebar-primary-foreground: 235 40% 5%;
+    --sidebar-accent: 235 25% 14%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 235 25% 18%;
+    --sidebar-ring: 187 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    @apply tracking-tight;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass {
+    background: hsl(var(--card) / 0.55);
+    backdrop-filter: blur(14px);
+    border: 1px solid hsl(var(--border));
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(hsl(187 100% 50% / 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(187 100% 50% / 0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse at 50% 30%, black 20%, transparent 75%);
+  }
+
+  .bg-brand-gradient {
+    background: var(--brand-gradient);
+  }
+}
