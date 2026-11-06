@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import BackToTopButton from "@/components/BackToTopButton";
 import NeuralBackground from "@/components/NeuralBackground";
 
 const MainLayout = () => (
@@ -11,6 +12,7 @@ const MainLayout = () => (
       <Outlet />
     </main>
     <SiteFooter />
+    <BackToTopButton />
   </div>
 );
 

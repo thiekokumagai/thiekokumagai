@@ -55,11 +55,11 @@ const Index = () => (
             </span>
           ))}
         </Reveal>
-        <Reveal delay={0.4} className="mt-10 flex flex-wrap gap-3">
-          <Button asChild size="lg" className="shadow-[0_0_24px_hsl(var(--primary)/0.4)]">
+        <Reveal delay={0.4} className="mt-10 flex flex-col gap-3 sm:flex-row">
+          <Button asChild size="lg" className="w-full shadow-[0_0_24px_hsl(var(--primary)/0.4)] sm:w-auto">
             <a href="#contato">Vamos conversar</a>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-primary/40 bg-transparent">
+          <Button asChild size="lg" variant="outline" className="w-full border-primary/40 bg-transparent font-medium text-foreground hover:bg-primary/10 hover:text-primary sm:w-auto">
             <a href="#experiencia">Ver trajetória</a>
           </Button>
         </Reveal>
@@ -217,18 +217,18 @@ const Index = () => (
     {/* CONTATO */}
     <Section id="contato" kicker="07 · contato" title="Vamos construir algo?">
       <Reveal>
-        <div className="flex flex-wrap gap-3">
-          <Button asChild size="lg">
+        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <Button asChild size="lg" className="w-full sm:w-auto">
             <a href={perfil.whatsapp} target="_blank" rel="noreferrer">
               <MessageCircle /> {perfil.telefone}
             </a>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-primary/40 bg-transparent">
+          <Button asChild size="lg" variant="outline" className="w-full border-primary/40 bg-transparent font-medium text-foreground hover:bg-primary/10 hover:text-primary sm:w-auto">
             <a href={`mailto:${perfil.email}`}>
               <Mail /> {perfil.email}
             </a>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-primary/40 bg-transparent">
+          <Button asChild size="lg" variant="outline" className="w-full border-primary/40 bg-transparent font-medium text-foreground hover:bg-primary/10 hover:text-primary sm:w-auto">
             <a href={perfil.linkedin} target="_blank" rel="noreferrer">
               <Linkedin /> {perfil.linkedinUser}
             </a>
