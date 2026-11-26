@@ -2,16 +2,16 @@ export const perfil = {
   nome: "Wesley Thieko de Aguiar Kumagai",
   nomeCurto: "Thieko Kumagai",
   cargo: "Full Stack Developer",
-  tags: ["Node.js", "React", "Angular", "Laravel", "NestJS", "Integrações", "Automação", "IA"],
+  tags: ["Java", "C#", "Node.js", "NestJS", "Laravel", "React", "APIs REST", "Integrações", "Automação", "IA"],
   telefone: "(67) 9 9112-2210",
   whatsapp: "https://wa.me/5567991122210",
   email: "thieko.kumagai@gmail.com",
   linkedin: "https://www.linkedin.com/in/thiekokumagaidev",
   linkedinUser: "@thiekokumagaidev",
   resumo: [
-    "Desenvolvedor Full Stack com mais de 10 anos de experiência em desenvolvimento web e sistemas corporativos. Atuação sólida em backend com Laravel, NestJS e integrações complexas, além de frontend moderno com React e Tailwind CSS.",
-    "Experiência em projetos institucionais, sistemas educacionais, automações empresariais com n8n, integrações com gateways de pagamento, TOTVS, assinatura digital e reconhecimento facial.",
-    "Forte foco em integrações, automação inteligente e soluções orientadas a negócio.",
+    "Desenvolvedor Full Stack com mais de 10 anos de experiência em desenvolvimento de software e sistemas corporativos. Backend com Java, C#, Node.js, NestJS e Laravel, APIs REST e bancos SQL (MySQL, PostgreSQL, SQL Server); frontend com React e Tailwind CSS.",
+    "Na Mil Tec, desenvolvo APIs em Java e C# (cerca de 1 ano com as duas linguagens) para sistemas fiscais, com integração SEFAZ, NF-e e certificados digitais A1/A3, usando RabbitMQ (fila de processamento de NF-e) e Kubernetes. Pratico testes unitários e de integração, code review, modelagem de dados, documentação técnica e atendimento a incidentes, em times ágeis com Scrum e Clean Architecture.",
+    "Também atuo com integrações (gateways de pagamento, ERP TOTVS, assinatura digital, reconhecimento facial) e automação com IA: n8n, WhatsApp API e integrações com IA no atendimento. Certificados Alura em n8n com IA (2025).",
   ],
 };
 
@@ -19,7 +19,7 @@ export const destaques: string[] = [];
 
 export const stats = [
   { valor: 10, sufixo: "+", label: "anos de experiência" },
-  { valor: 5, sufixo: "", label: "empresas" },
+  { valor: 4, sufixo: "", label: "empresas" },
   { valor: 6, sufixo: "+", label: "projetos freelancer" },
   { valor: 2015, sufixo: "", label: "Ciência da Computação" },
 ];
@@ -27,13 +27,14 @@ export const stats = [
 export const competencias = [
   {
     titulo: "Backend",
-    itens: ["Node.js", "NestJS", "PHP", "Laravel", "Python", "Java", "C# (APIs)", "APIs REST", "Gateways de pagamento", "Integrações com IA", "Integração TOTVS", "Upload de imagens com MinIO"],
+    itens: ["Java", "Maven/Gradle", "C# (APIs)", "Node.js", "NestJS", "PHP", "Laravel", "Python", "APIs REST", "Gateways de pagamento", "Integrações com IA", "Integração TOTVS", "Integração SEFAZ e NF-e", "Upload de imagens com MinIO"],
   },
   {
     titulo: "Frontend",
     itens: ["Next.js", "AngularJS", "React", "Vite", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "WordPress avançado", "Figma"],
   },
-  { titulo: "Banco de dados", itens: ["MySQL", "PostgreSQL", "SQL Server"] },
+  { titulo: "Banco de dados", itens: ["MySQL", "PostgreSQL", "SQL Server", "Modelagem de dados", "Scripts SQL"] },
+  { titulo: "Mensageria & Infraestrutura", itens: ["RabbitMQ", "Kubernetes"] },
   { titulo: "Mobile", itens: ["React Native", "Flutter"] },
   {
     titulo: "Automação & Integrações",
@@ -41,7 +42,7 @@ export const competencias = [
   },
   {
     titulo: "Metodologias & Ferramentas",
-    itens: ["Scrum", "Git", "Sistemas corporativos", "UI/UX básico", "Flat Design"],
+    itens: ["Scrum", "Git", "Clean Architecture", "Testes unitários e de integração", "Code review", "Documentação técnica", "Suporte a incidentes", "Sistemas corporativos", "UI/UX básico", "Flat Design"],
   },
 ];
 
@@ -49,7 +50,7 @@ export const experiencias = [
   {
     empresa: "Mil Tec Tecnologia",
     cargo: "Desenvolvedor Pleno Full Stack",
-    periodo: "2026",
+    periodo: "2026 – atual",
     local: "Remoto",
     itens: [
       "Desenvolvimento e integração com APIs da SEFAZ",
@@ -59,7 +60,8 @@ export const experiencias = [
       "Integração com certificados digitais A1/A3",
       "Geração e validação de documentos fiscais eletrônicos",
       "Desenvolvimento e manutenção de APIs REST",
-      "Desenvolvimento em Java e APIs em C#",
+      "Desenvolvimento em Java (build com Maven/Gradle) e APIs em C#",
+      "RabbitMQ como fila para processar NF-e; uso de Kubernetes em projetos",
       "Clean Architecture, boas práticas e separação de responsabilidades",
       "Decisões técnicas, melhorias de performance e ambiente ágil (Scrum)",
     ],
@@ -86,10 +88,13 @@ export const experiencias = [
     link: "https://funlec.com.br/",
     itens: [
       "Sistema financeiro interno",
-      "Sistema de RH com integração ao ERP TOTVS",
-      "Sistema acadêmico para gestão de alunos e professores",
-      "Integração com sistemas legados e automação de processos administrativos",
+      "Sistema de RH (Meu RH: justificativas de ponto e holerite online) com integração ao ERP TOTVS Protheus",
+      "Sistema acadêmico (Aluno Online: pedagógico, financeiro e social) para alunos e professores",
+      "Sistema de cobrança de títulos em atraso",
+      "Integrações via API com bot de WhatsApp, SMS, relógio de ponto e sistemas legados",
+      "Automação de processos administrativos",
       "Sistema contábil",
+      "APIs REST em PHP e Laravel; suporte a pais, alunos, professores e administrativo",
       "Desenvolvimento completo do site institucional em WordPress, com estilização em Tailwind CSS",
     ],
   },
@@ -134,4 +139,18 @@ export const formacao = {
   curso: "Bacharel em Ciência da Computação",
   instituicao: "Anhanguera Educacional",
   ano: "Concluído em 2015",
+};
+
+export const certificados = [
+  { nome: "Flash Skills: automação de processos com n8n e IA", emissor: "Alura", data: "dez. 2025" },
+  { nome: "Automação de Fluxos: integrando n8n e IA", emissor: "Alura", data: "dez. 2025" },
+  { nome: "Next.js: trabalhando com arquitetura Front-end", emissor: "Alura", data: "set. 2025" },
+  { nome: "Next.js: autenticação e gerenciamento de Tokens", emissor: "Alura", data: "nov. 2023" },
+  { nome: "Tailwind CSS: estilizando a sua página com classes utilitárias", emissor: "Alura", data: "fev. 2023" },
+];
+
+// Indicação para a vaga da Join: aparece só no PDF (rota /pdf), não no site público.
+export const indicacao = {
+  nome: "Ergon Zamarian",
+  email: "ergon.zamarian@jointecnologia.com.br",
 };

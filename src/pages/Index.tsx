@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { ArrowUpRight, Cpu, Linkedin, Mail, MessageCircle, Terminal } from "lucide-react";
-import { automacoes, competencias, destaques, experiencias, formacao, perfil, projetos, stats } from "@/data/curriculo";
+import { automacoes, certificados, competencias, destaques, experiencias, formacao, perfil, projetos, stats } from "@/data/curriculo";
 import { Button } from "@/components/ui/button";
 import Reveal from "@/components/Reveal";
 import Typewriter from "@/components/Typewriter";
@@ -202,8 +202,24 @@ const Index = () => (
       </Reveal>
     </Section>
 
+    {/* CERTIFICADOS */}
+    <Section id="certificados" kicker="06 · certificados" title="Certificados">
+      <Reveal>
+        <ul className="glass space-y-2 rounded-xl p-6 text-fg-secondary">
+          {certificados.map((c) => (
+            <li key={c.nome} className="flex flex-wrap items-baseline justify-between gap-2">
+              <span>{c.nome}</span>
+              <span className="font-mono text-xs text-primary">
+                {c.emissor} · {c.data}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </Reveal>
+    </Section>
+
     {/* FORMAÇÃO */}
-    <Section id="formacao" kicker="06 · formação" title="Formação">
+    <Section id="formacao" kicker="07 · formação" title="Formação">
       <Reveal>
         <div className="glass inline-block rounded-xl p-6">
           <h3 className="font-display text-xl font-semibold">{formacao.curso}</h3>
@@ -215,7 +231,7 @@ const Index = () => (
     </Section>
 
     {/* CONTATO */}
-    <Section id="contato" kicker="07 · contato" title="Vamos construir algo?">
+    <Section id="contato" kicker="08 · contato" title="Vamos construir algo?">
       <Reveal>
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <Button asChild size="lg" className="w-full sm:w-auto">
